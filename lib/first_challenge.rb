@@ -13,7 +13,15 @@ def first_challenge
     }
   }
 
-  #your code here
+ contacts.each do |key1,value1|
+   value1.each do |key2,value2|
+    if key2 == :favorite_icecream_flavors
+     value2.delete_if do |element|
+       element == "strawberry"
+     end
+    end 
+   end
+ end
 
 
   #remember to return your newly altered contacts hash!
