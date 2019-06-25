@@ -6,8 +6,11 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
+    str = ""
+    groceries.values.each do |arr|
+    str << arr.join(" ") + " "
+    end
+    str.split(" ")
   #code your solution here!
-
-  
 
 end
