@@ -13,10 +13,9 @@ def first_challenge
     }
   }
 
-  #your code here
-
-
-  #remember to return your newly altered contacts hash!
+  
+  contacts["Freddy Mercury"][:favorite_icecream_flavors].delete("strawberry")
+  
   contacts
 end
 
